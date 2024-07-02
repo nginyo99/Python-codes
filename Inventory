@@ -1,0 +1,34 @@
+# Initialize an empty inventory dictionary
+inventory = {}
+
+# Function to add items to the inventory
+def add_item(item, quantity):
+    if item in inventory:
+        inventory[item] += quantity
+    else:
+        inventory[item] = quantity
+    print(f"{quantity} {item}(s) added to inventory.")
+
+# Function to remove items from the inventory
+def remove_item(item, quantity):
+    if item in inventory:
+        if inventory[item] >= quantity:
+            inventory[item] -= quantity
+            print(f"{quantity} {item}(s) removed from inventory.")
+        else:
+            print("Insufficient quantity in inventory.")
+    else:
+        print("Item not found in inventory.")
+
+# Function to display the current inventory
+def display_inventory():
+    print("Current Inventory:")
+    for item, quantity in inventory.items():
+        print(f"{item}: {quantity}")
+
+# Simulate the inventory system
+add_item("Apple", 10)
+add_item("Banana", 5)
+add_item("Apple", 3)
+remove_item("Apple", 2)
+display_inventory()

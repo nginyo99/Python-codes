@@ -1,0 +1,22 @@
+#python dictonary key : value pairs
+
+student = {
+    "name":"Fidelis",
+    "Reg_No":356,
+    "Age":22,
+    "email":"fidelis@gmail.com"
+}
+student["name"] = "James"
+print(student["name"])
+print(student["email"])
+print(student.keys())
+print(student.values())
+print(student.items())
+for x in student.keys():
+    print (x)
+for value in student.values():
+        print(value)
+    
+for key, value in student.items():
+        print(key, value)
+print(student)    

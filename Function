@@ -1,0 +1,18 @@
+#python Functions
+def rectangle(length,width):
+    area = length * width
+    return area
+
+len = int(input("enter length"))
+wid = int(input("enter width"))
+print(rectangle(len,wid))
+
+
+#python Functions
+def rectangle(length,width):
+    area = length * width
+    return area
+
+len = int(input("enter length"))
+wid = int(input("enter width"))
+print(rectangle(len,wid))
